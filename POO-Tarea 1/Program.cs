@@ -11,7 +11,9 @@ namespace POO_Tarea_1
         static void Main(string[] args)
         {
             int a = 5;
-            Console.WriteLine("Hola Mundo");
+            ObjetoGeometrico objetoGeometrico = new ObjetoGeometrico();
+            objetoGeometrico.centroY = a;
+            Console.WriteLine(objetoGeometrico.centroY);
             Console.ReadLine(); 
         }
     }
