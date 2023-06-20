@@ -26,5 +26,9 @@ namespace POO_Tarea_1
         {
             area = radio1 * radio1 * Math.PI;
         }
+        public void mostrarArea()
+        {
+            Console.WriteLine("El area del Circulo es:" + area);
+        }
     }
 }
