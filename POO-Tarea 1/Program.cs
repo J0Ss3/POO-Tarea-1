@@ -282,11 +282,42 @@ namespace POO_Tarea_1
             Console.WriteLine("Hola Mundo");
         }
 
+
         static void Ejercicio6()
         {
-            Camion camion1 = new Camion("Mercedes","B2-101",Color.Rojo,426,5000,7912,800);
+            Camion camion1 = new Camion("Mercedes", "B2-101", "Rojo", 426, 5000, 7912, 800);
             Console.WriteLine("Ejemplo de los datos de un camion");
-            camion1.mostrarDatos();
+            camion1.imprimirDatos();
+
+            Console.WriteLine("\n\nIngrese la Marca del Camion");
+            string marca = Console.ReadLine();
+            Console.WriteLine("Ingrese el Modelo del Camion");
+            string modelo = Console.ReadLine();
+            Console.WriteLine("Ingrese el Color del Camion \n1)Rojo\n2)Verde\n3)Azul\n4)Negro\n5)Amarillo\n6)Gris");
+            string color=Console.ReadLine();    
+            
+
+            Console.WriteLine("Ingrese el numero de motor");
+            int numMotor = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese la potencia del motor");
+            double potenciaMotor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el numero de chassis");
+            int numeroChassis = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el peso del chassis (kg)");
+            double pesoChassis = double.Parse(Console.ReadLine());
+
+            Camion camion2 = new Camion(marca, modelo, color, numMotor, potenciaMotor, numeroChassis, pesoChassis);
+            Console.WriteLine("\nDatos del Camion\n");
+            camion2.imprimirDatos();
+        }
+        static void Ejercicio7()
+        {
+            Ejercicio7_Camion camion1 = new Ejercicio7_Camion("Motorola","PA-065",Color.Gris,366,420,720,96);
+            Console.WriteLine("Ejemplo de los datos de un camion");
+            camion1.imprimirDatos();
 
             Console.WriteLine("\n\nIngrese la Marca del Camion");
             string marca=Console.ReadLine();
@@ -294,7 +325,7 @@ namespace POO_Tarea_1
             string modelo=Console.ReadLine();
             Console.WriteLine("Ingrese el Color del Camion \n1)Rojo\n2)Verde\n3)Azul\n4)Negro\n5)Amarillo\n6)Gris");
             int opcion=int.Parse(Console.ReadLine());
-            //Valor por defecto
+            //Valor por defecto Color
             Color color=Color.Rojo;
             switch (opcion)
             {
@@ -333,16 +364,13 @@ namespace POO_Tarea_1
             Console.WriteLine("Ingrese el peso del chassis (kg)");
             double pesoChassis = double.Parse(Console.ReadLine());
 
-            Camion camion2 = new Camion(marca, modelo, color, numMotor, potenciaMotor, numeroChassis, pesoChassis);
+            Ejercicio7_Camion camion2 = new Ejercicio7_Camion(marca, modelo, color, numMotor, potenciaMotor, numeroChassis, pesoChassis);
             Console.WriteLine("\nDatos del Camion\n");
-            camion2.mostrarDatos();
+            camion2.imprimirDatos();
 
         }
 
-        static void Ejercicio7()
-        {
-            Console.WriteLine("Hola Mundo");
-        }
+        
 
        
 

@@ -55,6 +55,7 @@
     <Compile Include="Ejercicio 4\Ejercicio4_Cuadrado.cs" />
     <Compile Include="Ejercicio 4\Ejercicio4_ObjetoGeometrico.cs" />
     <Compile Include="Ejercicio 6\Camion.cs" />
+    <Compile Include="Ejercicio 7\Ejercicio7_Camion.cs" />
     <Compile Include="Ejercicio 6\Chassis.cs" />
     <Compile Include="Ejercicio 6\Motor.cs" />
     <Compile Include="Program.cs" />
@@ -66,7 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ejercicio 5\" />
-    <Folder Include="Ejercicio 7\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
