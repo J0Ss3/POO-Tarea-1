@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 
 
@@ -59,6 +54,7 @@ namespace POO_Tarea_1
                 Console.ReadLine();
 
             }while(!finEjecucion);   
+            
         }
 
         static void Ejercicio1()
