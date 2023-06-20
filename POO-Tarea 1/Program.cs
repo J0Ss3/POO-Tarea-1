@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POO_Tarea_1.Ejercicio_4;
+using System;
 using System.Collections.Generic;
 
 
@@ -83,16 +84,16 @@ namespace POO_Tarea_1
             circulo.centroY = Convert.ToInt32(Console.ReadLine());
 
             //Radio del Circulo
-            Console.WriteLine("Ingrese el largo de un lado del cuadrado");
+            Console.WriteLine("Ingrese el largo del radio del Circulo");
             circulo.radio = Convert.ToInt32(Console.ReadLine());
 
             //Area y centro del cuadrado
-            Console.WriteLine("Cuadrado:");
+            Console.WriteLine("\nCuadrado:");
             cuadrado.mostrarCentro();
             cuadrado.mostrarArea();
 
             //Area y centro del circulo
-            Console.WriteLine("Circulo:");
+            Console.WriteLine("\nCirculo:");
             circulo.mostrarCentro();
             circulo.mostrarArea();
         }
@@ -240,7 +241,46 @@ namespace POO_Tarea_1
 
         static void Ejercicio4()
         {
-            Console.WriteLine("Hola Mundo");
+            //Declaracion de variables necesarias
+            int centroX_Cuadrado=1, centroY_Cuadrado=1,ladoCuadrado = 1;
+            int centroX_Circulo=2, centroY_Circulo=2, radioCirculo=2;
+
+            //Declaracion del centro del cuadrado
+            Console.WriteLine("Ingrese la coordenada x del centro del Cuadrado");
+            centroX_Cuadrado= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese la coordenada y del centro del Cuadrado");
+            centroY_Cuadrado = Convert.ToInt32(Console.ReadLine());
+
+            //Largo del Lado del Cuadrado
+            Console.WriteLine("Ingrese el largo de un lado del cuadrado");
+            ladoCuadrado= Convert.ToInt32(Console.ReadLine());
+
+            //Declaracion del centro del circulo
+            Console.WriteLine("Ingrese la coordenada x del centro del Circulo");
+            centroX_Circulo= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese la coordenada y del centro del Circulo");
+            centroY_Circulo= Convert.ToInt32(Console.ReadLine());
+
+            //Radio del Circulo
+            Console.WriteLine("Ingrese el largo del radio del Circulo");
+            radioCirculo= Convert.ToInt32(Console.ReadLine());
+
+            //Creacion del los Objeto Cuadrado y Circulo
+            Ejercicio4_Cuadrado cuadrado = new Ejercicio4_Cuadrado(centroX_Cuadrado, centroY_Cuadrado, ladoCuadrado);
+            Ejercicio4_Circulo circulo = new Ejercicio4_Circulo(centroX_Circulo, centroY_Circulo, radioCirculo);
+
+            //Area y centro del cuadrado
+            Console.WriteLine("\nCuadrado:");
+            cuadrado.mostrarCentro();
+            cuadrado.mostrarArea();
+
+            //Area y centro del circulo
+            Console.WriteLine("\nCirculo:");
+            circulo.mostrarCentro();
+            circulo.mostrarArea();
+
+           
+            
         }
 
         static void Ejercicio5()
