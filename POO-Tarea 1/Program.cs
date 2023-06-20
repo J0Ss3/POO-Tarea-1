@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
+
 
 
 namespace POO_Tarea_1
@@ -22,6 +23,7 @@ namespace POO_Tarea_1
                 Console.WriteLine("Seleccione el ejercicio");      
                 Console.WriteLine("1)Diseñar y programar las clases Circulo y Cuadrado derivadas de ObjetoGeometrico ");
                 Console.WriteLine("2)Una editorial de libros desea crear un sistema ");
+                Console.WriteLine("3)Implemente una clase abstracta Persona ");
                 Console.WriteLine("0)Salir");
                 Console.WriteLine("Ingrese un número:");
                 int numeroEjercicio = Convert.ToInt32(Console.ReadLine());
@@ -37,7 +39,19 @@ namespace POO_Tarea_1
                         break;
                     case 3:
                         Ejercicio3();
-                        break
+                        break;
+                    case 4:
+                        Ejercicio4();
+                        break;
+                    case 5:
+                        Ejercicio5();
+                        break;
+                    case 6:
+                        Ejercicio6();
+                        break;
+                    case 7:
+                        Ejercicio7();
+                        break;
                     default:
                         finEjecucion = true;
                         break;
@@ -163,8 +177,91 @@ namespace POO_Tarea_1
 
         static void Ejercicio3()
         {
-            Console.WriteLine("Hola Mundo");
+            Jornada jornada = Jornada.Matutina;
+            
+            int tipoJornada=1;
+            //Nombre del Estudiante
+            Console.WriteLine("Ingrese el Nombre del Estudiante:");
+            string nombre_Estudiante=Console.ReadLine();
+
+            //Direccion del Estudiante
+            Console.WriteLine("Ingrese la Direccion del Estudiante:");
+            string direccion_Estudiante = Console.ReadLine();
+
+            //Numero de Cuenta del Estudiante
+            Console.WriteLine("Ingrese el numero de cuenta del Estudiante:");
+            int numeroCuenta_Estudiante = int.Parse(Console.ReadLine());
+
+            //Indice Academico del Estudiante
+            Console.WriteLine("Ingrese el indice academico del Estudiante:");
+            int indiceAcademico_Estudiante = int.Parse(Console.ReadLine());
+
+            //Creacion del Objeto Estudiante
+            Estudiante estudiante = new Estudiante(nombre_Estudiante,direccion_Estudiante,numeroCuenta_Estudiante,indiceAcademico_Estudiante);
+
+            //Nombre del Profesor
+            Console.WriteLine("Ingrese el Nombre del Profesor:");
+            string nombre_Profesor = Console.ReadLine();
+
+            //Direccion del Profesor
+            Console.WriteLine("Ingrese la Direccion del Profesor:");
+            string direccion_Profesor = Console.ReadLine();
+
+            //Numero de Cuenta del Profesor
+            Console.WriteLine("Ingrese el numero de empleado del Profesor:");
+            int numeroEmpleado_Profesor = int.Parse(Console.ReadLine());
+
+            //Tipo de Jornada del Profesor
+            Console.WriteLine("Seleccione el tipo de Jornada del Profesor \n1)Matutina \n2)Vespertina");
+            tipoJornada = int.Parse(Console.ReadLine());
+            if (tipoJornada == 1)
+            {
+                jornada = Jornada.Matutina;
+
+            }
+            else
+            {
+                jornada = Jornada.Vespertina;
+
+            }
+            Profesor profesor = new Profesor(nombre_Profesor, direccion_Profesor, numeroEmpleado_Profesor,jornada);
+
+            Console.WriteLine("En el raro caso de que ambos se esten diviertiendo esto estara pasando\n");
+            Console.Write("Estudiante:");
+            estudiante.divertirse();
+            Console.Write("\nProfesor:");
+            profesor.divertirse();
+            
+            Console.WriteLine("\nDatos del Estudiante:");
+            estudiante.mostrarDatos();
+            Console.WriteLine("\nDatos del Profesor:");
+            profesor.mostrarDatos();
         }
 
+
+
+
+
+
+        static void Ejercicio4()
+        {
+            Console.WriteLine("Hola Mundo");
+        }
+        static void Ejercicio5()
+        {
+            Console.WriteLine("Hola Mundo");
+        }
+        static void Ejercicio6()
+        {
+            Console.WriteLine("Hola Mundo");
+        }
+        static void Ejercicio7()
+        {
+            Console.WriteLine("Hola Mundo");
+        }
+       
+
     }
+
+
 }
