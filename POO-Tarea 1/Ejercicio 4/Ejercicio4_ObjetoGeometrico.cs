@@ -12,7 +12,7 @@ namespace POO_Tarea_1.Ejercicio_4
         private int centroY { get; set; }
         public void mostrarCentro()
         {
-            Console.WriteLine("El centro de la figura es X={" + centroX + "} Y={" + centroY + "}");
+            Console.WriteLine("El centro de la figura es X={0} Y={1}", centroX, centroY);
         }
         public Ejercicio4_ObjetoGeometrico(){}
         public Ejercicio4_ObjetoGeometrico(int centroX, int centroY)

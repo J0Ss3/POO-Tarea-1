@@ -1,8 +1,8 @@
 ﻿using POO_Tarea_1.Ejercicio_4;
+using POO_Tarea_1.Ejercicio_6;
 using System;
 using System.Collections.Generic;
-
-
+using System.ComponentModel;
 
 namespace POO_Tarea_1
 {
@@ -17,13 +17,7 @@ namespace POO_Tarea_1
             {
                 //Seleccion de Ejercicio
                 Console.WriteLine("Seleccione el ejercicio");      
-                Console.WriteLine("1)Diseñar y programar las clases Circulo y Cuadrado derivadas de ObjetoGeometrico ");
-                Console.WriteLine("2)Una editorial de libros desea crear un sistema ");
-                Console.WriteLine("3)Implemente una clase abstracta Persona ");
-                Console.WriteLine("4)Modifique el ejercicio Nº1, para que los campos miembros de las tres clases tengan accesibilidad privada ");
-                Console.WriteLine("5)Modifique el ejercicio Nº2 para que los campos de la clase Publicacion tengan accesibilidad de tipo protected y los\r\ncampos de las clases derivadas (Libro y Disco) sean de accesibilidad privada");
-                Console.WriteLine("6)Programe las siguiente clases de un camion");
-                Console.WriteLine("7)Modifique el programa del ejercicio Nº6, agregue a la clase Camión una enumeración con accesibilidad pública");
+                Console.WriteLine("1)Ejercicio 1\n2)Ejercicio 2\n3)Ejercicio 3\n4)Ejercicio 4\n5)Ejercicio 5\n6)Ejercicio 6\n7)Ejercicio 7");
                 Console.WriteLine("0)Salir");
                 Console.WriteLine("Ingrese un número:");
                 int numeroEjercicio = Convert.ToInt32(Console.ReadLine());
@@ -290,7 +284,59 @@ namespace POO_Tarea_1
 
         static void Ejercicio6()
         {
-            Console.WriteLine("Hola Mundo");
+            Camion camion1 = new Camion("Mercedes","B2-101",Color.Rojo,426,5000,7912,800);
+            Console.WriteLine("Ejemplo de los datos de un camion");
+            camion1.mostrarDatos();
+
+            Console.WriteLine("\n\nIngrese la Marca del Camion");
+            string marca=Console.ReadLine();
+            Console.WriteLine("Ingrese el Modelo del Camion");
+            string modelo=Console.ReadLine();
+            Console.WriteLine("Ingrese el Color del Camion \n1)Rojo\n2)Verde\n3)Azul\n4)Negro\n5)Amarillo\n6)Gris");
+            int opcion=int.Parse(Console.ReadLine());
+            //Valor por defecto
+            Color color=Color.Rojo;
+            switch (opcion)
+            {
+                case 1:
+                    color=Color.Rojo; 
+                    break;
+                case 2:
+                    color=Color.Verde;
+                    break;
+                case 3:
+                    color=Color.Azul;
+                    break;
+                case 4:
+                    color=Color.Negro;
+                    break;
+                case 5:
+                    color = Color.Amarillo;
+                    break;
+                case 6:
+                    color= Color.Gris;
+                    break;
+                default:
+                    Console.WriteLine("Opcion no valida");
+                    break;
+            }
+
+            Console.WriteLine("Ingrese el numero de motor");
+            int numMotor=int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese la potencia del motor");
+            double potenciaMotor=double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el numero de chassis");
+            int numeroChassis = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el peso del chassis (kg)");
+            double pesoChassis = double.Parse(Console.ReadLine());
+
+            Camion camion2 = new Camion(marca, modelo, color, numMotor, potenciaMotor, numeroChassis, pesoChassis);
+            Console.WriteLine("\nDatos del Camion\n");
+            camion2.mostrarDatos();
+
         }
 
         static void Ejercicio7()

@@ -20,6 +20,7 @@ namespace POO_Tarea_1
             }
         }
 
+        //El area depende del radio
         public double area { get; private set; }
 
         private void CalcularArea()
