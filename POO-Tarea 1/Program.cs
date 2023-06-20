@@ -19,6 +19,10 @@ namespace POO_Tarea_1
                 Console.WriteLine("1)Diseñar y programar las clases Circulo y Cuadrado derivadas de ObjetoGeometrico ");
                 Console.WriteLine("2)Una editorial de libros desea crear un sistema ");
                 Console.WriteLine("3)Implemente una clase abstracta Persona ");
+                Console.WriteLine("4)Modifique el ejercicio Nº1, para que los campos miembros de las tres clases tengan accesibilidad privada ");
+                Console.WriteLine("5)Modifique el ejercicio Nº2 para que los campos de la clase Publicacion tengan accesibilidad de tipo protected y los\r\ncampos de las clases derivadas (Libro y Disco) sean de accesibilidad privada");
+                Console.WriteLine("6)Programe las siguiente clases de un camion");
+                Console.WriteLine("7)Modifique el programa del ejercicio Nº6, agregue a la clase Camión una enumeración con accesibilidad pública");
                 Console.WriteLine("0)Salir");
                 Console.WriteLine("Ingrese un número:");
                 int numeroEjercicio = Convert.ToInt32(Console.ReadLine());
@@ -234,27 +238,26 @@ namespace POO_Tarea_1
             profesor.mostrarDatos();
         }
 
-
-
-
-
-
         static void Ejercicio4()
         {
             Console.WriteLine("Hola Mundo");
         }
+
         static void Ejercicio5()
         {
             Console.WriteLine("Hola Mundo");
         }
+
         static void Ejercicio6()
         {
             Console.WriteLine("Hola Mundo");
         }
+
         static void Ejercicio7()
         {
             Console.WriteLine("Hola Mundo");
         }
+
        
 
     }
