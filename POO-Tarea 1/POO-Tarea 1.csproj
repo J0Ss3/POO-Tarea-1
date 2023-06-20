@@ -54,6 +54,9 @@
     <Compile Include="Ejercicio 4\Ejercicio4_Circulo.cs" />
     <Compile Include="Ejercicio 4\Ejercicio4_Cuadrado.cs" />
     <Compile Include="Ejercicio 4\Ejercicio4_ObjetoGeometrico.cs" />
+    <Compile Include="Ejercicio 5\Ejercicio5_Disco.cs" />
+    <Compile Include="Ejercicio 5\Ejercicio5_Libro.cs" />
+    <Compile Include="Ejercicio 5\Ejercicio5_Publicacion.cs" />
     <Compile Include="Ejercicio 6\Camion.cs" />
     <Compile Include="Ejercicio 7\Ejercicio7_Camion.cs" />
     <Compile Include="Ejercicio 6\Chassis.cs" />
@@ -65,8 +68,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ejercicio 5\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

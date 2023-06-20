@@ -1,4 +1,5 @@
 ﻿using POO_Tarea_1.Ejercicio_4;
+using POO_Tarea_1.Ejercicio_5;
 using POO_Tarea_1.Ejercicio_6;
 using System;
 using System.Collections.Generic;
@@ -279,7 +280,24 @@ namespace POO_Tarea_1
 
         static void Ejercicio5()
         {
-            Console.WriteLine("Hola Mundo");
+            //Constructores con Todos los Parametros
+            Ejercicio5_Disco disco1 = new Ejercicio5_Disco("Titulo del disco", 10.99f, 45.0);
+            Ejercicio5_Libro libro1 = new Ejercicio5_Libro("Titulo del libro", 12.99f, 300, 2021);
+
+            //Constructores sin ningun parametro
+            Ejercicio5_Disco disco2 = new Ejercicio5_Disco();
+            Ejercicio5_Libro libro2 = new Ejercicio5_Libro();
+
+            Console.WriteLine("Datos de los constructores con Todos los Parametros");
+            disco1.mostrarDatos();
+            Console.WriteLine("\n");
+            libro1 .mostrarDatos();
+
+            Console.WriteLine("\n Datos de los constructores con sin ningun parametro");
+            disco2.mostrarDatos();
+            Console.WriteLine("\n");
+            libro2.mostrarDatos();
+
         }
 
 
