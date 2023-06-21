@@ -5,6 +5,15 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
+/*
+Integrantes-Grupo 5
+Numero de Cuenta-Nombre
+20172430034-Jhonny Javier Hernández 
+20191007299-Giancarlo Villars Reyes
+20201000460-Andrea Sofía Casco Medina 
+20201004846-Pablo César Flores
+20221001175-Jose Francisco Vargas
+*/
 namespace POO_Tarea_1
 {
     internal class Program
@@ -14,6 +23,15 @@ namespace POO_Tarea_1
             
             Boolean finEjecucion = false;
 
+            /*
+            Integrantes-Grupo 5
+            Numero de Cuenta-Nombre
+            20172430034-Jhonny Javier Hernández 
+            20191007299-Giancarlo Villars Reyes
+            20201000460-Andrea Sofía Casco Medina 
+            20201004846-Pablo César Flores
+            20221001175-Jose Francisco Vargas
+            */
             do
             {
                 //Seleccion de Ejercicio
@@ -114,6 +132,15 @@ namespace POO_Tarea_1
                 Console.WriteLine("Nombre:");
                 nombre= Console.ReadLine();
 
+                /*
+                Integrantes-Grupo 5
+                Numero de Cuenta-Nombre
+                20172430034-Jhonny Javier Hernández 
+                20191007299-Giancarlo Villars Reyes
+                20201000460-Andrea Sofía Casco Medina 
+                20201004846-Pablo César Flores
+                20221001175-Jose Francisco Vargas
+                */
                 //Precio de la Publicacion
                 Console.WriteLine("Precio:");
                 precio =float.Parse(Console.ReadLine());
@@ -169,13 +196,32 @@ namespace POO_Tarea_1
                 disco.mostrarDatos();
             }
 
+            /*
+            Integrantes-Grupo 5
+            Numero de Cuenta-Nombre
+            20172430034-Jhonny Javier Hernández 
+            20191007299-Giancarlo Villars Reyes
+            20201000460-Andrea Sofía Casco Medina 
+            20201004846-Pablo César Flores
+            20221001175-Jose Francisco Vargas
+            */
+
         }
 
         static void Ejercicio3()
         {
             Jornada jornada = Jornada.Matutina;
-            
-            int tipoJornada=1;
+
+            /*
+            Integrantes-Grupo 5
+            Numero de Cuenta-Nombre
+            20172430034-Jhonny Javier Hernández 
+            20191007299-Giancarlo Villars Reyes
+            20201000460-Andrea Sofía Casco Medina 
+            20201004846-Pablo César Flores
+            20221001175-Jose Francisco Vargas
+            */
+            int tipoJornada =1;
             //Nombre del Estudiante
             Console.WriteLine("Ingrese el Nombre del Estudiante:");
             string nombre_Estudiante=Console.ReadLine();
@@ -236,8 +282,19 @@ namespace POO_Tarea_1
 
         static void Ejercicio4()
         {
+
+            /*
+            Integrantes-Grupo 5
+            Numero de Cuenta-Nombre
+            20172430034-Jhonny Javier Hernández 
+            20191007299-Giancarlo Villars Reyes
+            20201000460-Andrea Sofía Casco Medina 
+            20201004846-Pablo César Flores
+            20221001175-Jose Francisco Vargas
+            */
+
             //Declaracion de variables necesarias
-            int centroX_Cuadrado=1, centroY_Cuadrado=1,ladoCuadrado = 1;
+            int centroX_Cuadrado =1, centroY_Cuadrado=1,ladoCuadrado = 1;
             int centroX_Circulo=2, centroY_Circulo=2, radioCirculo=2;
 
             //Declaracion del centro del cuadrado
@@ -388,10 +445,19 @@ namespace POO_Tarea_1
 
         }
 
-        
 
-       
 
+
+
+        /*
+        Integrantes-Grupo 5
+        Numero de Cuenta-Nombre
+        20172430034-Jhonny Javier Hernández 
+        20191007299-Giancarlo Villars Reyes
+        20201000460-Andrea Sofía Casco Medina 
+        20201004846-Pablo César Flores
+        20221001175-Jose Francisco Vargas
+        */
     }
 
 
